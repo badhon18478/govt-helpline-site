@@ -15,29 +15,27 @@
 <body class="min-h-screen bg-[#41ff6b1a]">
 
   <header class="bg-[#f4f5f7] shadow-md py-4">
-    <div class="container mx-auto px-4 flex justify-between items-center">
+    <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
       <div class="flex items-center">
         <img src="assets/logo.png" alt="Bangladesh Government Logo" class="h-8 w-8 mr-2">
         <span class="font-bold text-xl text-[#006747]">Emergency Service</span>
       </div>
-      <div class="flex items-center space-x-4 justify-center ">
-        <div class="flex items-center justify-center bg-[#41ff6b1a] rounded-3xl w-[100px] h-[45px] ">
-          <img src="assets/heart.png" alt="Heart" class=" w-[25px] h-[25px]">
+      <div class="flex items-center justify-center gap-2 md:gap-4 flex-wrap">
+        <div class="flex items-center justify-center bg-[#41ff6b1a] rounded-3xl w-[100px] h-[45px]">
+          <img src="assets/heart.png" alt="Heart" class="w-[25px] h-[25px]">
           <span id="heart-count" class="ml-1 text-[#000000] text-lg font-extrabold">0</span>
         </div>
-        <div class="flex items-center justify-center bg-[#41ff6b1a] rounded-3xl w-[100px] h-[45px] ">
-          <img src="assets/coin.png" alt="Heart" class=" w-[25px] h-[25px]">
+        <div class="flex items-center justify-center bg-[#41ff6b1a] rounded-3xl w-[100px] h-[45px]">
+          <img src="assets/coin.png" alt="Coin" class="w-[25px] h-[25px]">
           <span id="coin-count" class="ml-1 text-[#000000] text-lg font-extrabold">100</span>
         </div>
-        <div class="flex items-center gap-1 justify-center bg-[#00a63e] rounded-3xl w-[100px] h-[45px]  text-center">
+        <div class="flex items-center gap-1 justify-center bg-[#00a63e] rounded-3xl w-[100px] h-[45px] text-center">
           <span id="copy-count" class=" text-white text-lg font-semibold">0</span>
-          <p class="text-white text-lg font-semibold">Copy</p>
+          <p class=" text-white text-lg font-semibold">Copy</p>
         </div>
-
       </div>
     </div>
   </header>
-
   <main class=" ">
     <div class=" flex flex-col gap-2 justify-center items-center text-center 
       bg-[linear-gradient(90deg,rgba(1,50,35,1),rgba(0,103,71,1)_50%,rgba(1,50,35,1)_100%)] h-[250px]">
@@ -52,7 +50,9 @@
     </div>
 
     <!-- <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8"> -->
-    <div class="md:col-span-2 grid grid-cols-2 lg:grid-cols-4   gap-3 max-w-7xl  mt-7 mx-6">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 p-4 max-w-7xl mx-auto mt-7">
+
+
 
       <div class="bg-white rounded-xl shadow-lg p-6  max-w-sm card">
 
@@ -401,365 +401,8 @@
 
 
 
-      <!-- 
-    <div
-      class="bg-white p-4 rounded-lg shadow-md flex flex-col items-center justify-between text-center border border-gray-100">
-      <div class="flex items-center justify-between w-full mb-2">
-        <img src="fire-icon.png" alt="Fire Service Icon" class="h-8 w-8">
-        <div class="flex items-center space-x-2">
-          <input type="checkbox" class="h-4 w-4 text-green-600 rounded-full border-gray-300 focus:ring-green-500">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" fill="none" viewBox="0 0 24 24"
-            stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-              d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-          </svg>
-        </div>
-      </div>
-      <h3 class="text-lg font-bold">Fire Service Number</h3>
-      <p class="text-3xl font-bold text-[#0874F2] my-2">999</p>
-      <p class="text-sm text-gray-500">Fire Service Number</p>
-      <div class="flex justify-center space-x-2 mt-4 w-full">
-        <button class="btn-action">
-          <img src="copy-icon.png" alt="Copy Icon" class="h-4 w-4">
-          <span>Copy</span>
-        </button>
-        <button class="btn-action">
-          <img src="favorite-icon.png" alt="Favorite Icon" class="h-4 w-4">
-          <span>Fav</span>
-        </button>
-      </div>
-      <button
-        class="bg-[#0874F2] text-white py-2 px-4 rounded-full font-bold w-full mt-4 hover:bg-[#065bbf] transition-colors duration-200">Call</button>
-    </div>
 
-    <div
-      class="bg-white p-4 rounded-lg shadow-md flex flex-col items-center justify-between text-center border border-gray-100">
-      <div class="flex items-center justify-between w-full mb-2">
-        <img src="ambulance-icon.png" alt="Ambulance Icon" class="h-8 w-8">
-        <div class="flex items-center space-x-2">
-          <input type="checkbox" class="h-4 w-4 text-green-600 rounded-full border-gray-300 focus:ring-green-500">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" fill="none" viewBox="0 0 24 24"
-            stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-              d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-          </svg>
-        </div>
-      </div>
-      <h3 class="text-lg font-bold">Ambulance Service</h3>
-      <p class="text-3xl font-bold text-[#0874F2] my-2">999</p>
-      <p class="text-sm text-gray-500">Ambulance Service Number</p>
-      <div class="flex justify-center space-x-2 mt-4 w-full">
-        <button class="btn-action">
-          <img src="copy-icon.png" alt="Copy Icon" class="h-4 w-4">
-          <span>Copy</span>
-        </button>
-        <button class="btn-action">
-          <img src="favorite-icon.png" alt="Favorite Icon" class="h-4 w-4">
-          <span>Fav</span>
-        </button>
-      </div>
-      <button
-        class="bg-[#0874F2] text-white py-2 px-4 rounded-full font-bold w-full mt-4 hover:bg-[#065bbf] transition-colors duration-200">Call</button>
     </div>
-    <div class="md:col-span-1 bg-white p-6 rounded-lg shadow-md border border-gray-100">
-      <div class="flex justify-between items-center mb-4">
-        <h3 class="text-xl font-bold">Call History</h3>
-        <button class="text-green-600 font-bold text-sm">Clear</button>
-      </div>
-      <ul class="space-y-4">
-        <li class="flex items-center justify-between py-2 border-b border-gray-200">
-          <div class="flex items-center">
-            <img src="police-icon.png" alt="Police Icon" class="w-8 h-8 mr-3">
-            <div>
-              <h4 class="font-semibold text-sm">Police Service</h4>
-              <p class="text-xs text-gray-500">10:00 AM</p>
-            </div>
-          </div>
-          <span class="text-xs text-gray-500">Yesterday</span>
-        </li>
-        <li class="flex items-center justify-between py-2 border-b border-gray-200">
-          <div class="flex items-center">
-            <img src="police-icon.png" alt="Police Icon" class="w-8 h-8 mr-3">
-            <div>
-              <h4 class="font-semibold text-sm">National Emergency Number</h4>
-              <p class="text-xs text-gray-500">10:00 AM</p>
-            </div>
-          </div>
-          <span class="text-xs text-gray-500">Tue, Aug 07</span>
-        </li>
-        <li class="flex items-center justify-between py-2 border-b border-gray-200">
-          <div class="flex items-center">
-            <img src="fire-icon.png" alt="Fire Service Icon" class="w-8 h-8 mr-3">
-            <div>
-              <h4 class="font-semibold text-sm">Fire Service Number</h4>
-              <p class="text-xs text-gray-500">10:00 AM</p>
-            </div>
-          </div>
-          <span class="text-xs text-gray-500">Tue, Aug 07</span>
-        </li>
-        <li class="flex items-center justify-between py-2 border-b border-gray-200">
-          <div class="flex items-center">
-            <img src="police-icon.png" alt="Police Icon" class="w-8 h-8 mr-3">
-            <div>
-              <h4 class="font-semibold text-sm">Police Service</h4>
-              <p class="text-xs text-gray-500">10:00 AM</p>
-            </div>
-          </div>
-          <span class="text-xs text-gray-500">Tue, Aug 07</span>
-        </li>
-        <li class="flex items-center justify-between py-2">
-          <div class="flex items-center">
-            <img src="phone-icon.png" alt="Helpline Icon" class="w-8 h-8 mr-3">
-            <div>
-              <h4 class="font-semibold text-sm">Anti-Corruption Helpline</h4>
-              <p class="text-xs text-gray-500">10:00 AM</p>
-            </div>
-          </div>
-          <span class="text-xs text-gray-500">Tue, Aug 07</span>
-        </li>
-      </ul>
-    </div>
-    <div class="md:col-span-1 bg-white p-6 rounded-lg shadow-md border border-gray-100">
-      <div class="flex justify-between items-center mb-4">
-        <h3 class="text-xl font-bold">Call History</h3>
-        <button class="text-green-600 font-bold text-sm">Clear</button>
-      </div>
-      <ul class="space-y-4">
-        <li class="flex items-center justify-between py-2 border-b border-gray-200">
-          <div class="flex items-center">
-            <img src="police-icon.png" alt="Police Icon" class="w-8 h-8 mr-3">
-            <div>
-              <h4 class="font-semibold text-sm">Police Service</h4>
-              <p class="text-xs text-gray-500">10:00 AM</p>
-            </div>
-          </div>
-          <span class="text-xs text-gray-500">Yesterday</span>
-        </li>
-        <li class="flex items-center justify-between py-2 border-b border-gray-200">
-          <div class="flex items-center">
-            <img src="police-icon.png" alt="Police Icon" class="w-8 h-8 mr-3">
-            <div>
-              <h4 class="font-semibold text-sm">National Emergency Number</h4>
-              <p class="text-xs text-gray-500">10:00 AM</p>
-            </div>
-          </div>
-          <span class="text-xs text-gray-500">Tue, Aug 07</span>
-        </li>
-        <li class="flex items-center justify-between py-2 border-b border-gray-200">
-          <div class="flex items-center">
-            <img src="fire-icon.png" alt="Fire Service Icon" class="w-8 h-8 mr-3">
-            <div>
-              <h4 class="font-semibold text-sm">Fire Service Number</h4>
-              <p class="text-xs text-gray-500">10:00 AM</p>
-            </div>
-          </div>
-          <span class="text-xs text-gray-500">Tue, Aug 07</span>
-        </li>
-        <li class="flex items-center justify-between py-2 border-b border-gray-200">
-          <div class="flex items-center">
-            <img src="police-icon.png" alt="Police Icon" class="w-8 h-8 mr-3">
-            <div>
-              <h4 class="font-semibold text-sm">Police Service</h4>
-              <p class="text-xs text-gray-500">10:00 AM</p>
-            </div>
-          </div>
-          <span class="text-xs text-gray-500">Tue, Aug 07</span>
-        </li>
-        <li class="flex items-center justify-between py-2">
-          <div class="flex items-center">
-            <img src="phone-icon.png" alt="Helpline Icon" class="w-8 h-8 mr-3">
-            <div>
-              <h4 class="font-semibold text-sm">Anti-Corruption Helpline</h4>
-              <p class="text-xs text-gray-500">10:00 AM</p>
-            </div>
-          </div>
-          <span class="text-xs text-gray-500">Tue, Aug 07</span>
-        </li>
-      </ul>
-    </div>
-    <div
-      class="bg-white p-4 rounded-lg shadow-md flex flex-col items-center justify-between text-center border border-gray-100">
-      <div class="flex items-center justify-between w-full mb-2">
-        <img src="phone-icon.png" alt="Helpline Icon" class="h-8 w-8">
-        <div class="flex items-center space-x-2">
-          <input type="checkbox" class="h-4 w-4 text-green-600 rounded-full border-gray-300 focus:ring-green-500">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" fill="none" viewBox="0 0 24 24"
-            stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-              d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-          </svg>
-        </div>
-      </div>
-      <h3 class="text-lg font-bold">National Emergency Number</h3>
-      <p class="text-3xl font-bold text-[#0874F2] my-2">999</p>
-      <p class="text-sm text-gray-500">National Emergency Number</p>
-      <div class="flex justify-center space-x-2 mt-4 w-full">
-        <button class="btn-action">
-          <img src="copy-icon.png" alt="Copy Icon" class="h-4 w-4">
-          <span>Copy</span>
-        </button>
-        <button class="btn-action">
-          <img src="favorite-icon.png" alt="Favorite Icon" class="h-4 w-4">
-          <span>Fav</span>
-        </button>
-      </div>
-      <button
-        class="bg-[#0874F2] text-white py-2 px-4 rounded-full font-bold w-full mt-4 hover:bg-[#065bbf] transition-colors duration-200">Call</button>
-    </div>
-
-    <div
-      class="bg-white p-4 rounded-lg shadow-md flex flex-col items-center justify-between text-center border border-gray-100">
-      <div class="flex items-center justify-between w-full mb-2">
-        <img src="phone-icon.png" alt="Helpline Icon" class="h-8 w-8">
-        <div class="flex items-center space-x-2">
-          <input type="checkbox" class="h-4 w-4 text-green-600 rounded-full border-gray-300 focus:ring-green-500">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" fill="none" viewBox="0 0 24 24"
-            stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-              d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-          </svg>
-        </div>
-      </div>
-      <h3 class="text-lg font-bold">Anti-Corruption Helpline</h3>
-      <p class="text-3xl font-bold text-[#0874F2] my-2">106</p>
-      <p class="text-sm text-gray-500">Anti-Corruption Helpline</p>
-      <div class="flex justify-center space-x-2 mt-4 w-full">
-        <button class="btn-action">
-          <img src="copy-icon.png" alt="Copy Icon" class="h-4 w-4">
-          <span>Copy</span>
-        </button>
-        <button class="btn-action">
-          <img src="favorite-icon.png" alt="Favorite Icon" class="h-4 w-4">
-          <span>Fav</span>
-        </button>
-      </div>
-      <button
-        class="bg-[#0874F2] text-white py-2 px-4 rounded-full font-bold w-full mt-4 hover:bg-[#065bbf] transition-colors duration-200">Call</button>
-    </div>
-
-    <div
-      class="bg-white p-4 rounded-lg shadow-md flex flex-col items-center justify-between text-center border border-gray-100">
-      <div class="flex items-center justify-between w-full mb-2">
-        <img src="phone-icon.png" alt="Helpline Icon" class="h-8 w-8">
-        <div class="flex items-center space-x-2">
-          <input type="checkbox" class="h-4 w-4 text-green-600 rounded-full border-gray-300 focus:ring-green-500">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" fill="none" viewBox="0 0 24 24"
-            stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-              d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-          </svg>
-        </div>
-      </div>
-      <h3 class="text-lg font-bold">Disaster Helpline</h3>
-      <p class="text-3xl font-bold text-[#0874F2] my-2">1090</p>
-      <p class="text-sm text-gray-500">Disaster Helpline</p>
-      <div class="flex justify-center space-x-2 mt-4 w-full">
-        <button class="btn-action">
-          <img src="copy-icon.png" alt="Copy Icon" class="h-4 w-4">
-          <span>Copy</span>
-        </button>
-        <button class="btn-action">
-          <img src="favorite-icon.png" alt="Favorite Icon" class="h-4 w-4">
-          <span>Fav</span>
-        </button>
-      </div>
-      <button
-        class="bg-[#0874F2] text-white py-2 px-4 rounded-full font-bold w-full mt-4 hover:bg-[#065bbf] transition-colors duration-200">Call</button>
-    </div>
-
-    <div
-      class="bg-white p-4 rounded-lg shadow-md flex flex-col items-center justify-between text-center border border-gray-100">
-      <div class="flex items-center justify-between w-full mb-2">
-        <img src="phone-icon.png" alt="Helpline Icon" class="h-8 w-8">
-        <div class="flex items-center space-x-2">
-          <input type="checkbox" class="h-4 w-4 text-green-600 rounded-full border-gray-300 focus:ring-green-500">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" fill="none" viewBox="0 0 24 24"
-            stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-              d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-          </svg>
-        </div>
-      </div>
-      <h3 class="text-lg font-bold">Health Hotline</h3>
-      <p class="text-3xl font-bold text-[#0874F2] my-2">16263</p>
-      <p class="text-sm text-gray-500">Health Hotline</p>
-      <div class="flex justify-center space-x-2 mt-4 w-full">
-        <button class="btn-action">
-          <img src="copy-icon.png" alt="Copy Icon" class="h-4 w-4">
-          <span>Copy</span>
-        </button>
-        <button class="btn-action">
-          <img src="favorite-icon.png" alt="Favorite Icon" class="h-4 w-4">
-          <span>Fav</span>
-        </button>
-      </div>
-      <button
-        class="bg-[#0874F2] text-white py-2 px-4 rounded-full font-bold w-full mt-4 hover:bg-[#065bbf] transition-colors duration-200">Call</button>
-    </div>
-
-    <div
-      class="bg-white p-4 rounded-lg shadow-md flex flex-col items-center justify-between text-center border border-gray-100">
-      <div class="flex items-center justify-between w-full mb-2">
-        <img src="phone-icon.png" alt="Helpline Icon" class="h-8 w-8">
-        <div class="flex items-center space-x-2">
-          <input type="checkbox" class="h-4 w-4 text-green-600 rounded-full border-gray-300 focus:ring-green-500">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" fill="none" viewBox="0 0 24 24"
-            stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-              d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-          </svg>
-        </div>
-      </div>
-      <h3 class="text-lg font-bold">Human Rights Helpline</h3>
-      <p class="text-3xl font-bold text-[#0874F2] my-2">16108</p>
-      <p class="text-sm text-gray-500">Human Rights Helpline</p>
-      <div class="flex justify-center space-x-2 mt-4 w-full">
-        <button class="btn-action">
-          <img src="copy-icon.png" alt="Copy Icon" class="h-4 w-4">
-          <span>Copy</span>
-        </button>
-        <button class="btn-action">
-          <img src="favorite-icon.png" alt="Favorite Icon" class="h-4 w-4">
-          <span>Fav</span>
-        </button>
-      </div>
-      <button
-        class="bg-[#0874F2] text-white py-2 px-4 rounded-full font-bold w-full mt-4 hover:bg-[#065bbf] transition-colors duration-200">Call</button>
-    </div>
-
-    <div
-      class="bg-white p-4 rounded-lg shadow-md flex flex-col items-center justify-between text-center border border-gray-100">
-      <div class="flex items-center justify-between w-full mb-2">
-        <img src="phone-icon.png" alt="Helpline Icon" class="h-8 w-8">
-        <div class="flex items-center space-x-2">
-          <input type="checkbox" class="h-4 w-4 text-green-600 rounded-full border-gray-300 focus:ring-green-500">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" fill="none" viewBox="0 0 24 24"
-            stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-              d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-          </svg>
-        </div>
-      </div>
-      <h3 class="text-lg font-bold">Child Helpline</h3>
-      <p class="text-3xl font-bold text-[#0874F2] my-2">1098</p>
-      <p class="text-sm text-gray-500">Child Helpline</p>
-      <div class="flex justify-center space-x-2 mt-4 w-full">
-        <button class="btn-action">
-          <img src="copy-icon.png" alt="Copy Icon" class="h-4 w-4">
-          <span>Copy</span>
-        </button>
-        <button class="btn-action">
-          <img src="favorite-icon.png" alt="Favorite Icon" class="h-4 w-4">
-          <span>Fav</span>
-        </button>
-      </div>
-      <button
-        class="bg-[#0874F2] text-white py-2 px-4 rounded-full font-bold w-full mt-4 hover:bg-[#065bbf] transition-colors duration-200">Call</button>
-    </div> -->
-    </div>
-
-
-    <!-- </div> -->
   </main>
   <script src="index.js"></script>
 </body>
